@@ -1,0 +1,14 @@
+<p>propertybinding works!</p>
+
+<h2>Welcome {{name}}</h2>
+<input [id]="myId" type="text" value="arqam">
+<input [disabled]="isDisabled" id="{{myId}}" type="text" value="arqam">
+<input [disabled]="isDisabled" id="{{myId}}" type="text" value="arqam">
+
+<p [class]="successClass" class="itellic"> class binding property </p>
+
+<p [class.dangerClass]="hasError"> class danger bind </p>
+<p [ngClass]="messageClasses"> ngClass bind</p>
+
+
+

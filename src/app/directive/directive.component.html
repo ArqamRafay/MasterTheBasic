@@ -1,0 +1,20 @@
+<h3>NgSwitch Case</h3>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You picked Red color</div>
+    <div *ngSwitchCase="'blue'">You picked Blue color</div>
+    <div *ngSwitchCase="'green'">You picked green color</div>
+    <div *ngSwitchDefault>You picked Default</div>
+
+</div>
+
+
+<div *ngFor="let color of color2; index as i">
+    <h2>{{i}} {{color}}</h2>
+
+</div>
+
+<div *ngFor="let color of color2; even as e">
+    <p>{{e}} showing even number</p>
+
+</div>
