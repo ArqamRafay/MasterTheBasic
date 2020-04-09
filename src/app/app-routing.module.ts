@@ -5,13 +5,17 @@ import { PropertybindingComponent } from './component/propertybinding/propertybi
 import { DirectiveComponent } from './directive/directive.component';
 import { ParentComponent } from './parent/parent.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { DepartmentComponent } from './department/department.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   { path: 'interpolation', component: InterpolationComponent },
   { path: 'propertyBinding', component: PropertybindingComponent },
   { path: 'directive', component: DirectiveComponent },
   { path: 'parent', component: ParentComponent },
-  { path: 'employeeList', component: EmployeeListComponent}
+  { path: 'employeeList', component: EmployeeListComponent },
+  { path: 'department', component: DepartmentComponent },
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -19,3 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
