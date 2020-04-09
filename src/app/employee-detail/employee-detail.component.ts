@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../employee.service';
+import { GeneralHelper } from '../_GeneralHelper/generalHelper';
 
 @Component({
   selector: 'app-employee-detail',
@@ -9,12 +10,12 @@ import { EmployeeService } from '../employee.service';
 export class EmployeeDetailComponent implements OnInit {
 
   public employees = []
-  public errMsg;
-  constructor(private employeeService: EmployeeService) { }
+  
+  constructor(private employeeService: EmployeeService, private generalHelper: GeneralHelper) { }
 
   ngOnInit() {
-    this.employeeService.getEmployee()
-      .subscribe(data => this.employees = data, error => this.errMsg = error)
+    debugger;
+    this.employees = this.generalHelper.employeeList
   }
 
 }

@@ -14,6 +14,7 @@ import { EmployeeService } from './employee.service';
 import { HttpClientModule } from '@angular/common/http';
 import { DepartmentComponent } from './department/department.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
+import { GeneralHelper } from './_GeneralHelper/generalHelper';
 
 @NgModule({
   declarations: [
@@ -26,14 +27,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     EmployeeListComponent,
     EmployeeDetailComponent,
     DepartmentComponent,
-    PageNotFoundComponent,  
+    PageNotFoundComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService, GeneralHelper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
