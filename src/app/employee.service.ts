@@ -11,6 +11,8 @@ export class EmployeeService {
 
   constructor(private http: HttpClient) { }
 
+// design one more service get against ID 
+
   getEmployee(): Observable<IEmployee[]> {
     return this.http.get<IEmployee[]>(this._url).catch(this.errorHandler);
   }

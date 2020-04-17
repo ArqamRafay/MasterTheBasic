@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DepartmentComponent } from './department/department.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { GeneralHelper } from './_GeneralHelper/generalHelper';
+import { DepartmentListComponent } from './department-list/department-list.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { GeneralHelper } from './_GeneralHelper/generalHelper';
     EmployeeDetailComponent,
     DepartmentComponent,
     PageNotFoundComponent,
+    DepartmentListComponent,
     
   ],
   imports: [
