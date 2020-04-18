@@ -30,5 +30,11 @@ export class DepartmentListComponent implements OnInit {
     let nextId = this.departmentId + 1;
     this.router.navigate(['/department', nextId]);
   }
+  showOverview(){
+    this.router.navigate(['overview'],{relativeTo: this.activatedRoute})
+  }
+  showContact(){
+    this.router.navigate(['contact'],{relativeTo: this.activatedRoute})
+  }
 
 }

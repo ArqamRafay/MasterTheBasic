@@ -16,6 +16,8 @@ import { DepartmentComponent } from './department/department.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 import { GeneralHelper } from './_GeneralHelper/generalHelper';
 import { DepartmentListComponent } from './department-list/department-list.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { DepartmentListComponent } from './department-list/department-list.compo
     DepartmentComponent,
     PageNotFoundComponent,
     DepartmentListComponent,
+    OverviewComponent,
+    ContactComponent,
     
   ],
   imports: [
