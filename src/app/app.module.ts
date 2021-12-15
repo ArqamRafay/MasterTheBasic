@@ -18,6 +18,7 @@ import { GeneralHelper } from './_GeneralHelper/generalHelper';
 import { DepartmentListComponent } from './department-list/department-list.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
+import { RegblackDirective } from './customDirectives/regblack.directive';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { ContactComponent } from './contact/contact.component';
     DepartmentListComponent,
     OverviewComponent,
     ContactComponent,
+    RegblackDirective,
     
   ],
   imports: [
