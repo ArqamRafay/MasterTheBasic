@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { DepartmentListComponent } from './department-list/department-list.component';
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/department', pathMatch: 'full' },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'directive', component: DirectiveComponent },
   { path: 'parent', component: ParentComponent },
   { path: 'employeeList', component: EmployeeListComponent },
+  {path: 'reactiveForm', component: ReactiveformsComponent},
+  
   { path: 'department', component: DepartmentComponent },
   {
     path: 'department/:id', component: DepartmentListComponent,
