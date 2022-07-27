@@ -19,6 +19,8 @@ import { DepartmentListComponent } from './department-list/department-list.compo
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
 import { RegblackDirective } from './customDirectives/regblack.directive';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,15 @@ import { RegblackDirective } from './customDirectives/regblack.directive';
     OverviewComponent,
     ContactComponent,
     RegblackDirective,
+    ReactiveformsComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [EmployeeService, GeneralHelper],
   bootstrap: [AppComponent]
